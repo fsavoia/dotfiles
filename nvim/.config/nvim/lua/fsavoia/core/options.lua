@@ -63,3 +63,36 @@ opt.undofile = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 opt.scrolloff = 10
+
+-- Fold settings
+opt.foldmethod = "expr"
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+opt.foldcolumn = "0"
+opt.foldtext = ""
+opt.foldlevel = 99
+
+-- # Fold Manipulation Shortcuts in Neovim (and Vim)
+--
+-- # Individual Fold Manipulation
+-- za  → Toggles (open/close) the fold under the cursor.
+-- zA  → Recursively toggles all folds at the cursor level.
+-- zo  → Opens the fold under the cursor.
+-- zO  → Recursively opens all folds at the cursor level.
+-- zc  → Closes the fold under the cursor.
+-- zC  → Recursively closes all folds at the cursor level.
+--
+-- # Global Fold Manipulation
+-- zR  → Opens all folds in the file.
+-- zM  → Closes all folds in the file.
+--
+-- # Fold Level Manipulation
+-- z1  → Closes all folds of level 1 (keeping higher-level folds open).
+-- z2, z3, ..., z9  → Closes all folds up to the respective level.
+--
+-- # Editing Within Folds
+-- zx  → Recalculates folds in the file and tries to reopen where necessary.
+-- zX  → Closes all folds and recalculates them.
+--
+-- # Moving Between Folds
+-- [z  → Moves to the start of the current/open fold.
+-- ]z  → Moves to the end of the current/open fold.

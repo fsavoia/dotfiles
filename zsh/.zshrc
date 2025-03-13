@@ -55,8 +55,8 @@ alias eng-api="sudo ssh -i /Users/fsavoia/.ssh/id_rsa -L 80:ein1-fsavoi-u20:5000
 alias eng-docs="sudo ssh -i /Users/fsavoia/.ssh/id_rsa -L 80:ein1-fsavoi-u20:8000 fsavoia@ein1-fsavoi-u20.fsd.forescout.com"
 alias eng-ssl="sudo ssh -i /Users/fsavoia/.ssh/id_rsa -L 443:ein1-fsavoi-u20:4443 fsavoia@ein1-fsavoi-u20.fsd.forescout.com"
 alias dev="cd ~/Dev"
-# alias cat='bat --theme=Dracula --italic-text=always --style=plain,changes --paging=never'
-alias cat='bat --style=plain,changes --paging=never'
+alias cat='bat --style=plain --paging=never --terminal-width=$(tput cols)'
+# alias cat='bat --style=plain,changes --paging=never'
 alias cls="clear"
 alias gups="git checkout main && git fetch upstream && git merge upstream/main && git push"
 alias tf="terraform"
