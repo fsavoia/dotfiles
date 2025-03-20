@@ -1,6 +1,5 @@
 scalable
 eyeInspect
-forescout
 Pipenv
 libsqlite3
 dev
@@ -13,7 +12,6 @@ https
 https
 fsd
 SMDEV
-forescout
 https
 hostname
 TaskGetResponse
